@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+@model AquaBuilder.Models.ItemModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <form asp-action="Page2" method="post">
+        <label>Name</label>        <input asp-for="ItemName" />
+        <label>Description</label> <input asp-for="Description" />
+        <button type="submit">submit</button>
+    </form>
+
+    <br />
+    <a href="@Url.Action("Page2","Home")"> GO TO PAGE2 </a>
+</body>
+</html>
